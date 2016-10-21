@@ -11,4 +11,11 @@ public class TestPlanetExplorer {
 		assertEquals("(1,2)", posObst);
 	}
 	
+	@Test
+	public void test_executeCommand_Without_obstacles__frff__position_1_2() {
+		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
+		String posObst = explorer.executeCommand("frff");
+		assertEquals("(2,1)", posObst);
+	}
+	
 }
