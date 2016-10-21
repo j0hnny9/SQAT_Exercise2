@@ -435,3 +435,5 @@
 1477052954573 test-addition 1 358 true
 1477052954574 test-addition 2 358 true
 1477052954575 test-addition 1 358 true
+1477053040531 test-addition 1 79 true
+1477053040532 test-addition 1 79 true

@@ -45,6 +45,12 @@ public class TestPlanetExplorer {
 		assertEquals("W", changedDir);
 	}
 	
+	@Test
+	public void test_changeDirection_WestDirection__Command_left__DirectionSouth() {
+		PlanetExplorer explorer = new PlanetExplorer(0,0,"");
+		String changedDir = explorer.changeDirection("W","l");
+		assertEquals("S", changedDir);
+	}
 	
 	
 }
