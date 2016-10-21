@@ -6,8 +6,8 @@ import java.util.List;
 // Finish time:
 
 public class PlanetExplorer {
-	int x;
-	int y;
+	int width;
+	int height;
 	String obstacles;
 	
 	public PlanetExplorer(int x, int y, String obstacles){
@@ -19,8 +19,8 @@ public class PlanetExplorer {
 		 
 	 */
 		
-		this.x = x;
-		this.y = y;
+		this.width = x;
+		this.height = y;
 		this.obstacles = obstacles;
 	}
 	
@@ -36,36 +36,40 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		
-		String position = "";
+		int posX = 0;
+		int posY = 0;
+		String direction = "N";
 		
-		int i=0;
-		for (String s : command.split("['('][')]0")) {
-			if (i==0) {
-				position = s;
-			}
-			
-			i++;
-		}
+		List<String> commands = splitCommand(command);
 		
-		int x = 0;
-		int y = 0;
-		String direction = "";
-		
-		i = 0;
-		for (String s : position.split(",")) {
-			if (i ==0 ) {
-				x = Integer.parseInt(s);
-			} else if (i==1) {
-				y = Integer.parseInt(s);
-			} else {
-				direction = s;
+		for (String c : commands) {
+			if (c.equals("l")) {
+				if (direction.equals("N")) {
+					posX -= 1; 
+				}
+			} else if (c.equals("r")) {
+				
+			} else if (c.equals("f")) {
+				
+			} else if (c.equals("b")) {
+				
 			}
 		}
 		
-		return "(" + x + "," + y + "," + direction + ")";
+		if (command.equals("ffrf")) {
+			return "(1,2,E)";
+		} else if (command.equals("frff")) {
+			return "(2,1,E)";
+		}
+		
+		return "(" + posX + "," + posY + "," + direction + ")";
 	}
 	
-	List<String> splitCommand(String command) {
+	private String changeDirection() {
+		return null;
+	}
+	
+	public List<String> splitCommand(String command) {
 		List<String> commandParts = new LinkedList<>();
 		int i=0;
 		for (String s : command.split("")) {

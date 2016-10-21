@@ -31,6 +31,12 @@ public class TestPlanetExplorer {
 		assertEquals("frff", command);
 	}
 	
+	@Test
+	public void test_changeDirection_Without_obstacles_NorthDirection__Command_right__DirectionEast() {
+		String changedDir = changeDirection("N","r");
+		assertEquals("E", changedDir);
+	}
+	
 	
 	
 }
