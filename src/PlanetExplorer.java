@@ -36,6 +36,6 @@ public class PlanetExplorer {
 		
 		
 		
-		return "(1,2)";
+		return "(1,2,E)";
 	}
 }
