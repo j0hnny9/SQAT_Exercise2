@@ -9,6 +9,10 @@ public class PlanetExplorer {
 	int width;
 	int height;
 	String obstacles;
+	
+	int posX = 0;
+	int posY = 0;
+	String direction = "N";
 
 	public PlanetExplorer(int x, int y, String obstacles) {
 		/*
@@ -44,10 +48,8 @@ public class PlanetExplorer {
 		 * obstacles. No white spaces.
 		 */
 
-		int posX = 0;
-		int posY = 0;
-		String direction = "N";
-
+		direction = "N";
+		
 		List<String> commands = splitCommand(command);
 
 		for (String c : commands) {
@@ -104,11 +106,19 @@ public class PlanetExplorer {
 	}
 
 	public String executeMovement(Direction currentDir, Movement move) {
-		if (currentDir == Direction.NORTH && move == Movement.FORWARD)
-			return "(0,1)";
-		if (currentDir == Direction.EAST && move == Movement.FORWARD)
-			return "(1,0)";
-		return null;
+		switch (currentDir) {
+		case NORTH:
+			if (move == Movement.FORWARD) {
+				posY += 1;
+			}
+			break;
+		case EAST:
+			if (move == Movement.FORWARD) {
+				posX += 1;
+			}
+			break;
+		}
+		return "(" + posX + "," + posY + ")";
 	}
 
 	public List<String> splitCommand(String command) {

@@ -266,3 +266,15 @@ RefactoringAction 1477054645142 TestPlanetExplorer.java RENAME test_move1__EastD
 RefactoringAction 1477054653893 TestPlanetExplorer.java RENAME test_move2__EastDirection__Command_Backward__PositionX_1_PositionY_0()=>void test_move2__EastDirection__Command_Forward__PositionX_1_PositionY_0() METHOD
 RefactoringAction 1477054660071 TestPlanetExplorer.java RENAME test_move2__EastDirection__Command_Forward__PositionX_1_PositionY_0()=>void test_move2__EastDirection__Command_Forward__PositionX_2_PositionY_0() METHOD
 EditAction 1477054677387 TestPlanetExplorer.java 2924 10 33 10
+UnitTestCaseAction 1477054677702 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477054677718 TestPlanetExplorer.java FAIL
+RefactoringAction 1477054718200 PlanetExplorer.java ADD int posX FIELD
+RefactoringAction 1477054718200 PlanetExplorer.java ADD int posY FIELD
+RefactoringAction 1477054718200 PlanetExplorer.java ADD String direction FIELD
+UnitTestCaseAction 1477054745799 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477054745799 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477054873255 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477054873255 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477054998823 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477054998839 TestPlanetExplorer.java FAIL
+EditAction 1477055075623 TestPlanetExplorer.java 2922 10 33 10
