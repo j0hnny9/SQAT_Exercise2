@@ -4,8 +4,8 @@ import java.util.List;
 import javax.sound.midi.Soundbank;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
-// ID:
-// Finish time:
+// ID: 150
+// Finish time: 16:42
 
 public class PlanetExplorer {
 	int width;
