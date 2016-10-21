@@ -18,4 +18,15 @@ public class TestPlanetExplorer {
 		assertEquals("(2,1,E)", posObst);
 	}
 	
+	@Test
+	public void test_splitCommand_Without_obstacles__frff__commands() {
+		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
+		String[] commands = explorer.split("frff");
+		String command = "";
+		for (String s : commands) {
+			command += s;
+		}
+		assertEquals("(2,1,E)", command);
+	}
+	
 }

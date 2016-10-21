@@ -47,7 +47,7 @@ public class PlanetExplorer {
 		
 		int x = 0;
 		int y = 0;
-		String direction´= "";
+		String direction = "";
 		
 		i = 0;
 		for (String s : position.split(",")) {
