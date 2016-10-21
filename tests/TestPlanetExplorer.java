@@ -98,5 +98,16 @@ public class TestPlanetExplorer {
 		assertEquals("(0,0)", posAfterMove);
 	}
 	
+	@Test
+	public void test_move5_Grid_4_4_OverEdge__NorthDirection__Command_Forward__PositionX_0_PositionY_0() {
+		PlanetExplorer explorer = new PlanetExplorer(5,5,"");
+		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
+		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
+		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
+		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
+		String posAfterMove = explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
+		assertEquals("(0,1)", posAfterMove);
+	}
+	
 	
 }

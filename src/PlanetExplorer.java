@@ -118,6 +118,10 @@ public class PlanetExplorer {
 			}
 			break;
 		}
+		
+		posX = posX % width;
+		posY = posY % height;
+		
 		return "(" + posX + "," + posY + ")";
 	}
 
