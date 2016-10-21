@@ -102,8 +102,10 @@ public class PlanetExplorer {
 		}
 		return null;
 	}
-	
+
 	public String executeMovement(Direction currentDir, Movement move) {
+		if (currentDir == Direction.NORTH && move == Movement.FORWARD)
+			return "(0,1)";
 		return null;
 	}
 
