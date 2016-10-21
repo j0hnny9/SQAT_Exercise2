@@ -65,16 +65,16 @@ public class PlanetExplorer {
 		return "(" + posX + "," + posY + "," + direction + ")";
 	}
 	
-	public String changeDirection(String currentDir, String commandDirChange) {
-		if (currentDir.equals("N")) {
-			if (commandDirChange.equals("r")) {
-				return "E";
-			} else if (commandDirChange.equals("l")) {
-				return "W";
+	public Direction changeDirection(Direction currentDir, Movement commandDirChange) {
+		if (currentDir == Direction.NORTH) {
+			if (commandDirChange == Movement.RIGHT) {
+				return Direction.EAST;
+			} else if (commandDirChange == Movement.LEFT) {
+				return Direction.WEST;
 			}
-		} else if (currentDir.equals("W")) {
-			if (commandDirChange.equals("l")) {
-				return "S";
+		} else if (currentDir == Direction.WEST) {
+			if (commandDirChange == Movement.LEFT) {
+				return Direction.SOUTH;
 			}
 		}
 		return null;

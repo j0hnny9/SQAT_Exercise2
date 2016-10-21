@@ -183,3 +183,24 @@ RefactoringAction 1477053182779 Direction.java ADD Direction NORTH FIELD
 RefactoringAction 1477053186898 Direction.java ADD Direction EAST FIELD
 RefactoringAction 1477053186898 Direction.java ADD Direction WEST FIELD
 EditAction 1477053311356 TestPlanetExplorer.java 1662 6 20 6
+UnitTestCaseAction 1477053311770 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477053311770 TestPlanetExplorer.java OK
+RefactoringAction 1477053325202 PlanetExplorer.java RENAME changeDirection(String, String)=>Direction changeDirection(Direction, String) METHOD
+CompilationAction 1477053361815 TestPlanetExplorer.java
+CompilationAction 1477053398756 TestPlanetExplorer.java
+UnitTestCaseAction 1477053399009 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477053399009 TestPlanetExplorer.java OK
+RefactoringAction 1477053433953 Movement.java ADD Movement.java CLASS
+RefactoringAction 1477053446433 Movement.java ADD Movement LEFT FIELD
+RefactoringAction 1477053450036 Movement.java ADD Movement RIGHT FIELD
+RefactoringAction 1477053457244 Movement.java ADD Movement FORWARD FIELD
+RefactoringAction 1477053457244 Movement.java ADD Movement BACKWARD FIELD
+RefactoringAction 1477053473577 PlanetExplorer.java RENAME changeDirection(Direction, String)=>Direction changeDirection(Direction, Movement) METHOD
+CompilationAction 1477053531765 TestPlanetExplorer.java
+CompilationAction 1477053560687 TestPlanetExplorer.java
+UnitTestCaseAction 1477053560940 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477053560940 TestPlanetExplorer.java OK
+RefactoringAction 1477053579145 TestPlanetExplorer.java ADD void test_changeDirection_WestDirection__Command_left__DirectionSouth()/2 METHOD
+RefactoringAction 1477053585838 TestPlanetExplorer.java RENAME test_changeDirection_WestDirection__Command_left__DirectionSouth()/2=>void test_changeDirection_SouthDirection__Command_left__DirectionSouth() METHOD
+RefactoringAction 1477053595104 TestPlanetExplorer.java RENAME test_changeDirection_SouthDirection__Command_left__DirectionSouth()=>void test_changeDirection_SouthDirection__Command_left__DirectionEast() METHOD
+EditAction 1477053616367 TestPlanetExplorer.java 2008 7 23 7
