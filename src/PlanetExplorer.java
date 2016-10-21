@@ -9,7 +9,7 @@ public class PlanetExplorer {
 	int width;
 	int height;
 	String obstacles;
-	
+
 	int posX = 0;
 	int posY = 0;
 	String direction = "N";
@@ -49,7 +49,7 @@ public class PlanetExplorer {
 		 */
 
 		direction = "N";
-		
+
 		List<String> commands = splitCommand(command);
 
 		for (String c : commands) {
@@ -118,10 +118,10 @@ public class PlanetExplorer {
 			}
 			break;
 		}
-		
+
 		posX = posX % width;
 		posY = posY % height;
-		
+
 		return "(" + posX + "," + posY + ")";
 	}
 
