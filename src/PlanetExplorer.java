@@ -34,7 +34,16 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		
+		String position;
 		
+		int i=0;
+		for (String s : command.split("['('][')]0")) {
+			if (i==0) {
+				position = s;
+			}
+			
+			i++;
+		}
 		
 		return "(1,2,E)";
 	}
