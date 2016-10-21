@@ -72,6 +72,10 @@ public class PlanetExplorer {
 			} else if (commandDirChange.equals("l")) {
 				return "W";
 			}
+		} else if (currentDir.equals("W")) {
+			if (commandDirChange.equals("l")) {
+				return "S";
+			}
 		}
 		return null;
 	}

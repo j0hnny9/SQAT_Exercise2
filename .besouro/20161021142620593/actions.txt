@@ -172,3 +172,14 @@ RefactoringAction 1477053067956 TestPlanetExplorer.java RENAME test_changeDirect
 RefactoringAction 1477053068986 TestPlanetExplorer.java RENAME test_changeDirection_WestrDirection__Command_left__DirectionEast()=>void test_changeDirection_WestDirection__Command_left__DirectionEast() METHOD
 RefactoringAction 1477053077737 TestPlanetExplorer.java RENAME test_changeDirection_WestDirection__Command_left__DirectionEast()=>void test_changeDirection_WestDirection__Command_left__DirectionSouth() METHOD
 EditAction 1477053088611 TestPlanetExplorer.java 1619 6 20 6
+UnitTestCaseAction 1477053088926 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477053088926 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477053127898 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477053127898 TestPlanetExplorer.java OK
+RefactoringAction 1477053157897 Direction.java ADD Direction.java CLASS
+RefactoringAction 1477053177616 Direction.java ADD Direction SOUTJ FIELD
+RefactoringAction 1477053178661 Direction.java RENAME SOUTJ=>Direction SOUTH FIELD
+RefactoringAction 1477053182779 Direction.java ADD Direction NORTH FIELD
+RefactoringAction 1477053186898 Direction.java ADD Direction EAST FIELD
+RefactoringAction 1477053186898 Direction.java ADD Direction WEST FIELD
+EditAction 1477053311356 TestPlanetExplorer.java 1662 6 20 6
