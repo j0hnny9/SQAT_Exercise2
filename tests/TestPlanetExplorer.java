@@ -86,7 +86,7 @@ public class TestPlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
 		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
 		String posAfterMove = explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
-		assertEquals("(0,)", posAfterMove);
+		assertEquals("(0,2)", posAfterMove);
 	}
 	
 	@Test
