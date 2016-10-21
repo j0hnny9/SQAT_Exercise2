@@ -12,3 +12,4 @@
 1477053863841 regression 1 0 true
 1477054072604 regression 1 0 true
 1477054497279 test-addition 2 405 true
+1477054563616 test-addition 2 59 false
