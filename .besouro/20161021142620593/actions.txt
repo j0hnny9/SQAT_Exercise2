@@ -77,3 +77,8 @@ RefactoringAction 1477051386689 PlanetExplorer.java RENAME splitCommand=>String 
 EditAction 1477051554562 TestPlanetExplorer.java 856 3 11 3
 CompilationAction 1477051554655 TestPlanetExplorer.java
 EditAction 1477051554686 PlanetExplorer.java 1994 3 16 0
+UnitTestCaseAction 1477051555033 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477051555033 TestPlanetExplorer.java FAIL
+RefactoringAction 1477051633391 PlanetExplorer.java ADD import java.util.LinkedList IMPORT
+RefactoringAction 1477051638867 PlanetExplorer.java ADD import java.util.List IMPORT
+EditAction 1477051655778 TestPlanetExplorer.java 860 3 11 3
