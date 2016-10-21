@@ -100,7 +100,7 @@ public class TestPlanetExplorer {
 	
 	@Test
 	public void test_move5_Grid_4_4_OverEdge__NorthDirection__Command_Forward__PositionX_0_PositionY_0() {
-		PlanetExplorer explorer = new PlanetExplorer(5,5,"");
+		PlanetExplorer explorer = new PlanetExplorer(4,4,"");
 		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
 		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
 		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
