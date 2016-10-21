@@ -71,3 +71,7 @@ RefactoringAction 1477051218114 TestPlanetExplorer.java RENAME test_splitCommand
 EditAction 1477051336894 TestPlanetExplorer.java 852 3 11 3
 CompilationAction 1477051336972 TestPlanetExplorer.java
 EditAction 1477051360418 TestPlanetExplorer.java 849 3 11 3
+CompilationAction 1477051360512 TestPlanetExplorer.java
+RefactoringAction 1477051381525 PlanetExplorer.java ADD String FIELD
+RefactoringAction 1477051386689 PlanetExplorer.java RENAME splitCommand=>String METHOD
+EditAction 1477051554562 TestPlanetExplorer.java 856 3 11 3
