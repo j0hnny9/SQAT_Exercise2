@@ -65,7 +65,12 @@ public class PlanetExplorer {
 		return "(" + posX + "," + posY + "," + direction + ")";
 	}
 	
-	private String changeDirection() {
+	public String changeDirection(String currentDir, String commandDirChange) {
+		if (currentDir.equals("N")) {
+			if (commandDirChange.equals("r")) {
+				return "E";
+			}
+		}
 		return null;
 	}
 	

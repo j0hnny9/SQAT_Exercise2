@@ -431,3 +431,7 @@
 1477052578611 test-first 1 2105 true
 1477052578612 test-first 1 2105 true
 1477052578613 test-first 1 2105 true
+1477052954572 test-addition 2 358 true
+1477052954573 test-addition 1 358 true
+1477052954574 test-addition 2 358 true
+1477052954575 test-addition 1 358 true

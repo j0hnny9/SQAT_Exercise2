@@ -32,9 +32,17 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_changeDirection_Without_obstacles_NorthDirection__Command_right__DirectionEast() {
-		String changedDir = changeDirection("N","r");
+	public void test_changeDirection_NorthDirection__Command_right__DirectionEast() {
+		PlanetExplorer explorer = new PlanetExplorer(0,0,"");
+		String changedDir = explorer.changeDirection("N","r");
 		assertEquals("E", changedDir);
+	}
+	
+	@Test
+	public void test_changeDirection_NorthDirection__Command_left__DirectionEast() {
+		PlanetExplorer explorer = new PlanetExplorer(0,0,"");
+		String changedDir = explorer.changeDirection("N","l");
+		assertEquals("W", changedDir);
 	}
 	
 	
