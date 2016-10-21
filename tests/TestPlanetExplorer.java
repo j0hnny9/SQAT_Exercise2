@@ -117,5 +117,12 @@ public class TestPlanetExplorer {
 		assertEquals("(0,2)", posAfterMove);
 	}
 	
+	@Test
+	public void test_moveString_to_MoveEnum__String_l__convert__MoveEnumLeft() {
+		PlanetExplorer explorer = new PlanetExplorer(0,0,"");
+		Movement convertedEnum = explorer.getMovement("l");
+		assertEquals(Movement.LEFT, convertedEnum);
+	}
+	
 	
 }

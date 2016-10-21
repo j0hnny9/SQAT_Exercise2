@@ -74,6 +74,10 @@ public class PlanetExplorer {
 
 		return "(" + posX + "," + posY + "," + direction + ")";
 	}
+	
+	public Movement getMovement(String move) {
+		return Movement.BACKWARD;
+	}
 
 	public Direction changeDirection(Direction currentDir, Movement commandDirChange) {
 		switch (currentDir) {
@@ -110,6 +114,8 @@ public class PlanetExplorer {
 		case NORTH:
 			if (move == Movement.FORWARD) {
 				posY += 1;
+			} else if (move == Movement.BACKWARD) {
+				posY -= 1;
 			}
 			break;
 		case EAST:
@@ -117,6 +123,13 @@ public class PlanetExplorer {
 				posX += 1;
 			}
 			break;
+		}
+
+		while (posX < 0) {
+			posX += width;
+		}
+		while (posY < 0) {
+			posY += height;
 		}
 
 		posX = posX % width;

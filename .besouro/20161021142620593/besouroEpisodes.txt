@@ -494,3 +494,14 @@
 1477055660998 test-addition 1 289 true
 1477055660999 test-addition 2 289 true
 1477055661000 test-addition 1 289 true
+1477056019028 test-addition 2 348 true
+1477056019029 test-addition 2 348 true
+1477056019030 test-addition 1 348 true
+1477056019031 test-addition 2 348 true
+1477056019032 test-addition 2 348 true
+1477056019033 test-addition 1 348 true
+1477056139229 refactoring 2B 43 true
+1477056139230 refactoring 2B 43 true
+1477056139231 refactoring 2B 43 true
+1477056139232 refactoring 2B 43 true
+1477056139233 regression 1 43 true
