@@ -59,5 +59,12 @@ public class TestPlanetExplorer {
 		assertEquals(Direction.EAST, changedDir);
 	}
 	
+	@Test
+	public void test_move1__NortDirection__Command_Forward__PositionX_0_PositionY_1() {
+		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
+		String posAfterMove = executeMovement(Direction.NORTH, Movement.FORWARD);
+		assertEquals(
+	}
+	
 	
 }
