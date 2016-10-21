@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+import java.util.List;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
 // ID:
@@ -63,11 +65,11 @@ public class PlanetExplorer {
 		return "(" + x + "," + y + "," + direction + ")";
 	}
 	
-	String[] splitCommand(String command) {
-		String[] commandParts = new String[4];
+	List<String> splitCommand(String command) {
+		List<String> commandParts = new LinkedList<>();
 		int i=0;
 		for (String s : command.split("")) {
-			commandParts[i] = s;
+			commandParts.add(s);
 					i++;
 		}
 		

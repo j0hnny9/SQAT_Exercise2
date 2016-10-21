@@ -82,3 +82,5 @@ UnitTestSessionAction 1477051555033 TestPlanetExplorer.java FAIL
 RefactoringAction 1477051633391 PlanetExplorer.java ADD import java.util.LinkedList IMPORT
 RefactoringAction 1477051638867 PlanetExplorer.java ADD import java.util.List IMPORT
 EditAction 1477051655778 TestPlanetExplorer.java 860 3 11 3
+CompilationAction 1477051655856 TestPlanetExplorer.java
+EditAction 1477051655887 PlanetExplorer.java 2059 3 16 0
