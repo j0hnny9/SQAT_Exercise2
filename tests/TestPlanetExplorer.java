@@ -26,7 +26,7 @@ public class TestPlanetExplorer {
 		for (String s : commands) {
 			command += s;
 		}
-		assertEquals("(2,1,E)", command);
+		assertEquals("frff", command);
 	}
 	
 }

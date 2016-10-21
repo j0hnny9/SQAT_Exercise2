@@ -69,3 +69,5 @@ RefactoringAction 1477051203185 TestPlanetExplorer.java RENAME test_splitCommand
 RefactoringAction 1477051209362 TestPlanetExplorer.java RENAME test_splitCommand_Without_obstacles__frff__position_1_2()=>void test_splitCommand_Without_obstacles__frff__() METHOD
 RefactoringAction 1477051218114 TestPlanetExplorer.java RENAME test_splitCommand_Without_obstacles__frff__()=>void test_splitCommand_Without_obstacles__frff__commands() METHOD
 EditAction 1477051336894 TestPlanetExplorer.java 852 3 11 3
+CompilationAction 1477051336972 TestPlanetExplorer.java
+EditAction 1477051360418 TestPlanetExplorer.java 849 3 11 3
