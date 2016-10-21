@@ -483,3 +483,9 @@
 1477055075977 test-addition 2 473 true
 1477055075978 test-addition 1 473 true
 1477055117125 test-addition 1 32 true
+1477055244165 test-addition 2 117 true
+1477055244166 test-addition 2 117 true
+1477055244167 test-addition 1 117 true
+1477055244168 test-addition 2 117 true
+1477055244169 test-addition 2 117 true
+1477055244170 test-addition 1 117 true
