@@ -44,3 +44,6 @@ RefactoringAction 1477050472916 TestPlanetExplorer.java ADD void test_executeCom
 RefactoringAction 1477050494553 TestPlanetExplorer.java RENAME test_executeCommand_Without_obstacles__ffrf__position_1_2()/2=>void test_executeCommand_Without_obstacles__frf__position_1_2() METHOD
 RefactoringAction 1477050495583 TestPlanetExplorer.java RENAME test_executeCommand_Without_obstacles__frf__position_1_2()=>void test_executeCommand_Without_obstacles__frff__position_1_2() METHOD
 EditAction 1477050514693 TestPlanetExplorer.java 555 2 6 2
+UnitTestCaseAction 1477050515023 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477050515023 TestPlanetExplorer.java FAIL
+EditAction 1477050562806 TestPlanetExplorer.java 559 2 6 2
