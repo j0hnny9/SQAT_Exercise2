@@ -76,7 +76,7 @@ public class PlanetExplorer {
 	}
 	
 	public Movement getMovement(String move) {
-		return Movement.BACKWARD;
+		return Movement.LEFT;
 	}
 
 	public Direction changeDirection(Direction currentDir, Movement commandDirChange) {
