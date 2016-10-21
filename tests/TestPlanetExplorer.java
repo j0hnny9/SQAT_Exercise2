@@ -76,7 +76,23 @@ public class TestPlanetExplorer {
 	@Test
 	public void test_move2__EastDirection__Command_Forward__PositionX_2_PositionY_0() {
 		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
-		String posAfterMove1 = explorer.executeMovement(Direction.EAST, Movement.FORWARD);
+		explorer.executeMovement(Direction.EAST, Movement.FORWARD);
+		String posAfterMove = explorer.executeMovement(Direction.EAST, Movement.FORWARD);
+		assertEquals("(2,0)", posAfterMove);
+	}
+	
+	@Test
+	public void test_move2__NorthDirection__Command_Forward__PositionX_0_PositionY_2() {
+		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
+		explorer.executeMovement(Direction.NORTH, Movement.FORWARD);
+		String posAfterMove = explorer.executeMovement(Direction.EAST, Movement.FORWARD);
+		assertEquals("(0,)", posAfterMove);
+	}
+	
+	@Test
+	public void test_move3_OverEdge__EastDirection__Command_Forward__PositionX_0_PositionY_0() {
+		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
+		explorer.executeMovement(Direction.EAST, Movement.FORWARD);
 		String posAfterMove = explorer.executeMovement(Direction.EAST, Movement.FORWARD);
 		assertEquals("(2,0)", posAfterMove);
 	}

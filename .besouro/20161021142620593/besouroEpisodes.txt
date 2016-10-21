@@ -472,3 +472,14 @@
 1477054563617 test-addition 1 59 true
 1477054563618 test-addition 2 59 true
 1477054563619 test-addition 1 59 true
+1477055075969 test-addition 2 473 true
+1477055075970 test-addition 2 473 true
+1477055075971 test-addition 2 473 true
+1477055075972 test-addition 2 473 true
+1477055075973 test-addition 1 473 true
+1477055075974 test-addition 2 473 true
+1477055075975 test-addition 2 473 true
+1477055075976 test-addition 2 473 true
+1477055075977 test-addition 2 473 true
+1477055075978 test-addition 1 473 true
+1477055117125 test-addition 1 32 true
