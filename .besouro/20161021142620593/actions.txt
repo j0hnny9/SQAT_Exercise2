@@ -1,0 +1,15 @@
+FileOpenedAction 1477049180811 PlanetExplorer.java 1270 2 1 0
+FileOpenedAction 1477049911644 PlanetExplorerException.java 61 0 0 0
+RefactoringAction 1477049982275 PlanetExplorer.java ADD int x FIELD
+RefactoringAction 1477049983320 PlanetExplorer.java ADD int y FIELD
+RefactoringAction 1477049988000 PlanetExplorer.java ADD String obstacles FIELD
+FileOpenedAction 1477050004224 TestPlanetExplorer.java 174 1 1 0
+RefactoringAction 1477050008873 TestPlanetExplorer.java ADD PlanetExplorer explorer FIELD
+RefactoringAction 1477050014552 TestPlanetExplorer.java ADD void test_executeCommand()/2 METHOD
+RefactoringAction 1477050017640 TestPlanetExplorer.java REMOVE explorer FIELD
+RefactoringAction 1477050314870 TestPlanetExplorer.java RENAME test_executeCommand()/2=>void test_() METHOD
+RefactoringAction 1477050317459 TestPlanetExplorer.java RENAME test_()=>void test_e() METHOD
+RefactoringAction 1477050318505 TestPlanetExplorer.java RENAME test_e()=>void test_() METHOD
+RefactoringAction 1477050319550 TestPlanetExplorer.java RENAME test_()=>void test_1() METHOD
+RefactoringAction 1477050321905 TestPlanetExplorer.java RENAME test_1()=>void test() METHOD
+EditAction 1477050323731 TestPlanetExplorer.java 352 2 4 1
