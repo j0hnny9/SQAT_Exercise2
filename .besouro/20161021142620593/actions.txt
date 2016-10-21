@@ -13,3 +13,4 @@ RefactoringAction 1477050318505 TestPlanetExplorer.java RENAME test_e()=>void te
 RefactoringAction 1477050319550 TestPlanetExplorer.java RENAME test_()=>void test_1() METHOD
 RefactoringAction 1477050321905 TestPlanetExplorer.java RENAME test_1()=>void test() METHOD
 EditAction 1477050323731 TestPlanetExplorer.java 352 2 4 1
+EditAction 1477050323949 PlanetExplorer.java 1307 2 1 0
