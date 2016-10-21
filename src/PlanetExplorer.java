@@ -53,17 +53,7 @@ public class PlanetExplorer {
 		List<String> commands = splitCommand(command);
 
 		for (String c : commands) {
-			if (c.equals("l")) {
-				if (direction.equals("N")) {
-					posX -= 1;
-				}
-			} else if (c.equals("r")) {
-
-			} else if (c.equals("f")) {
-
-			} else if (c.equals("b")) {
-
-			}
+			
 		}
 
 		if (command.equals("ffrf")) {
@@ -76,7 +66,16 @@ public class PlanetExplorer {
 	}
 	
 	public Movement getMovement(String move) {
-		return Movement.LEFT;
+		if (move.equals("l")) {
+			return Movement.LEFT;
+		} else if (move.equals("r")) {
+			return Movement.RIGHT;
+		} else if (move.equals("f")) {
+			return Movement.FORWARD;
+		} else if (move.equals("b")) {
+			return Movement.BACKWARD;
+		}
+		return null;
 	}
 
 	public Direction changeDirection(Direction currentDir, Movement commandDirChange) {

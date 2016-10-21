@@ -374,3 +374,10 @@ UnitTestSessionAction 1477056307280 TestPlanetExplorer.java OK
 RefactoringAction 1477056314144 TestPlanetExplorer.java ADD void test_moveString_to_MoveEnum__String_l__convert__MoveEnumLeft()/2 METHOD
 RefactoringAction 1477056317232 TestPlanetExplorer.java RENAME test_moveString_to_MoveEnum__String_l__convert__MoveEnumLeft()/2=>void test_moveString_to_MoveEnum__String_r__convert__MoveEnumLeft() METHOD
 EditAction 1477056325064 TestPlanetExplorer.java 4989 16 58 16
+UnitTestCaseAction 1477056325410 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477056325410 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477056429293 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056429293 TestPlanetExplorer.java OK
+RefactoringAction 1477056446422 TestPlanetExplorer.java ADD import jdk.Exported IMPORT
+FileOpenedAction 1477056471928 SpreadsheetTest.java 2472 11 25 11
+EditAction 1477056523897 TestPlanetExplorer.java 5013 16 58 16

@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.junit.Test;
 
+import jdk.Exported;
+
 public class TestPlanetExplorer {
 	
 	@Test
@@ -130,6 +132,7 @@ public class TestPlanetExplorer {
 		Movement convertedEnum = explorer.getMovement("r");
 		assertEquals(Movement.RIGHT, convertedEnum);
 	}
+	
 	
 	
 }
