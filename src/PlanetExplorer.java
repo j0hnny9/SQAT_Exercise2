@@ -62,4 +62,15 @@ public class PlanetExplorer {
 		
 		return "(" + x + "," + y + "," + direction + ")";
 	}
+	
+	String[] splitCommand(String command) {
+		String[] commandParts = new String[4];
+		int i=0;
+		for (String s : command.split("")) {
+			commandParts[i] = s;
+					i++;
+		}
+		
+		return commandParts;
+	}
 }
