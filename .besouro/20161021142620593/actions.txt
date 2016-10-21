@@ -381,3 +381,48 @@ UnitTestSessionAction 1477056429293 TestPlanetExplorer.java OK
 RefactoringAction 1477056446422 TestPlanetExplorer.java ADD import jdk.Exported IMPORT
 FileOpenedAction 1477056471928 SpreadsheetTest.java 2472 11 25 11
 EditAction 1477056523897 TestPlanetExplorer.java 5013 16 58 16
+CompilationAction 1477056524050 TestPlanetExplorer.java
+CompilationAction 1477056533829 TestPlanetExplorer.java
+CompilationAction 1477056533843 TestPlanetExplorer.java
+CompilationAction 1477056544538 TestPlanetExplorer.java
+UnitTestCaseAction 1477056544787 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056544787 TestPlanetExplorer.java OK
+UnitTestCaseAction 1477056623442 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056623442 TestPlanetExplorer.java OK
+RefactoringAction 1477056751705 PlanetExplorer.java RENAME executeMovement(Direction, Movement)=>String executeStraightMovement(Direction, Movement) METHOD
+RefactoringAction 1477056755839 PlanetExplorer.java RENAME executeStraightMovement(Direction, Movement)=>String executeMovement(Direction, Movement) METHOD
+RefactoringAction 1477056894119 PlanetExplorer.java REMOVE splitCommand(String) METHOD
+RefactoringAction 1477056894119 PlanetExplorer.java REMOVE changeDirection(Direction, Movement) METHOD
+RefactoringAction 1477056894119 PlanetExplorer.java REMOVE executeMovement(Direction, Movement) METHOD
+RefactoringAction 1477056894119 PlanetExplorer.java REMOVE getMovement(String) METHOD
+RefactoringAction 1477056896194 PlanetExplorer.java ADD Movement getMovement(String) METHOD
+RefactoringAction 1477056896194 PlanetExplorer.java ADD Direction changeDirection(Direction, Movement) METHOD
+RefactoringAction 1477056896209 PlanetExplorer.java ADD String executeMovement(Direction, Movement) METHOD
+RefactoringAction 1477056896209 PlanetExplorer.java ADD List<String> splitCommand(String) METHOD
+CompilationAction 1477056897021 TestPlanetExplorer.java
+CompilationAction 1477056911872 TestPlanetExplorer.java
+UnitTestCaseAction 1477056912156 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477056912156 TestPlanetExplorer.java FAIL
+RefactoringAction 1477056954447 PlanetExplorer.java ADD String get FIELD
+RefactoringAction 1477056963214 PlanetExplorer.java RENAME get=>String getDirec FIELD
+RefactoringAction 1477056965788 PlanetExplorer.java RENAME getDirec=>String getDirectionString FIELD
+RefactoringAction 1477056966834 PlanetExplorer.java RENAME getDirectionString=>String getDirectionString() METHOD
+RefactoringAction 1477056970453 PlanetExplorer.java RENAME getDirectionString()=>String getDirectionString(Direction) METHOD
+RefactoringAction 1477057049483 PlanetExplorer.java ADD import javax.sound.midi.Soundbank IMPORT
+UnitTestCaseAction 1477057184379 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477057184379 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477057211527 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477057211527 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477057257082 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477057257082 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477057263700 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477057263700 TestPlanetExplorer.java OK
+UnitTestCaseAction 1477057276448 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477057276448 TestPlanetExplorer.java OK
+FileOpenedAction 1477057295428 TestPlanetExplorer.java 5137 16 58 16
+UnitTestCaseAction 1477057296554 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477057296554 TestPlanetExplorer.java OK
+UnitTestCaseAction 1477057298492 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477057298492 TestPlanetExplorer.java OK
+UnitTestCaseAction 1477057299228 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477057299228 TestPlanetExplorer.java OK

@@ -22,3 +22,10 @@
 1477056139229 refactoring 2B 120 true
 1477056307280 test-addition 2 168 true
 1477056429293 test-addition 2 122 true
+1477056544787 regression 2 115 true
+1477056623442 regression 1 78 true
+1477057263700 regression 2 640 true
+1477057276448 regression 1 12 true
+1477057296554 regression 1 20 true
+1477057298492 regression 1 1 true
+1477057299228 regression 1 0 true

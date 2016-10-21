@@ -9,14 +9,14 @@ import jdk.Exported;
 public class TestPlanetExplorer {
 	
 	@Test
-	public void test_executeCommand_Without_obstacles__ffrf__position_1_2() {
+	public void test_executeCommand_Without_obstacles__ffrf__position_1_2() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
 		String posAndObst = explorer.executeCommand("ffrf");
 		assertEquals("(1,2,E)", posAndObst);
 	}
 	
 	@Test
-	public void test_executeCommand_Without_obstacles__frff__position_1_2() {
+	public void test_executeCommand_Without_obstacles__frff__position_1_2() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(3,3,"");
 		String posAndObst = explorer.executeCommand("frff");
 		assertEquals("(2,1,E)", posAndObst);
@@ -120,14 +120,14 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_moveString_to_MoveEnum__String_l__convert__MoveEnumLeft() {
+	public void test_moveString_to_MoveEnum__String_l__convert__MoveEnumLeft() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(0,0,"");
 		Movement convertedEnum = explorer.getMovement("l");
 		assertEquals(Movement.LEFT, convertedEnum);
 	}
 	
 	@Test
-	public void test_moveString_to_MoveEnum__String_r__convert__MoveEnumLeft() {
+	public void test_moveString_to_MoveEnum__String_r__convert__MoveEnumLeft() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(0,0,"");
 		Movement convertedEnum = explorer.getMovement("r");
 		assertEquals(Movement.RIGHT, convertedEnum);

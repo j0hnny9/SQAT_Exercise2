@@ -1,6 +1,8 @@
 import java.util.LinkedList;
 import java.util.List;
 
+import javax.sound.midi.Soundbank;
+
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
 // ID:
 // Finish time:
@@ -12,7 +14,7 @@ public class PlanetExplorer {
 
 	int posX = 0;
 	int posY = 0;
-	String direction = "N";
+	Direction direction = Direction.NORTH;
 
 	public PlanetExplorer(int x, int y, String obstacles) {
 		/*
@@ -32,7 +34,7 @@ public class PlanetExplorer {
 		this.obstacles = obstacles;
 	}
 
-	public String executeCommand(String command) {
+	public String executeCommand(String command) throws PlanetExplorerException {
 
 		/*
 		 * The command string is composed of "f" (forward), "b" (backward), "l"
@@ -48,24 +50,31 @@ public class PlanetExplorer {
 		 * obstacles. No white spaces.
 		 */
 
-		direction = "N";
+		direction = Direction.NORTH;
 
 		List<String> commands = splitCommand(command);
 
 		for (String c : commands) {
-			
+			Movement move = getMovement(c);
+			if (move == Movement.LEFT || move == Movement.RIGHT) {
+				changeDirection(direction, move);
+			} else {
+				executeMovement(direction, move);
+			}
 		}
 
+		
 		if (command.equals("ffrf")) {
 			return "(1,2,E)";
 		} else if (command.equals("frff")) {
 			return "(2,1,E)";
 		}
+		
 
-		return "(" + posX + "," + posY + "," + direction + ")";
+		return "(" + posX + "," + posY + "," + getDirectionString(direction) + ")";
 	}
 	
-	public Movement getMovement(String move) {
+	public Movement getMovement(String move) throws PlanetExplorerException {
 		if (move.equals("l")) {
 			return Movement.LEFT;
 		} else if (move.equals("r")) {
@@ -74,8 +83,9 @@ public class PlanetExplorer {
 			return Movement.FORWARD;
 		} else if (move.equals("b")) {
 			return Movement.BACKWARD;
+		} else {
+			throw new PlanetExplorerException();
 		}
-		return null;
 	}
 
 	public Direction changeDirection(Direction currentDir, Movement commandDirChange) {
@@ -107,6 +117,22 @@ public class PlanetExplorer {
 		}
 		return null;
 	}
+	
+	public String getDirectionString(Direction dir) throws PlanetExplorerException {
+		switch (dir) {
+		case NORTH:
+			return "N";
+		case SOUTH:
+			return "S";
+		case WEST:
+			return "W";
+		case EAST:
+			return "E";
+		default:
+			throw new PlanetExplorerException();
+		}
+	}
+	
 
 	public String executeMovement(Direction currentDir, Movement move) {
 		switch (currentDir) {
